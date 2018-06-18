@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>3.4</version>
+        <relativePath />
+    </parent>
+    <groupId>com.vignesh.jenkins.plugins</groupId>
+    <artifactId>my-jenkins-plugin</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <packaging>hpi</packaging>
+    <properties>
+        <project.scm.id>github</project.scm.id>
+        <jenkins.version>2.7.3</jenkins.version>
+        <java.level>7</java.level>
+    </properties>
+    <name>my-jenkins-plugin</name>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <url>https://wiki.jenkins.io/display/JENKINS/TODO+Plugin</url>
+    <scm>
+        <connection>scm:git:https://github.com/vbhask/my-jenkins-plugin.git</connection>
+        <developerConnection>scm:git:https://github.com/vbhask/my-jenkins-plugin.git</developerConnection>
+        <url>https://github.com/vbhask/my-jenkins-plugin</url>
+    </scm>
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus.beescloud.com</id>
+            <url>https://nexus3.beescloud.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus.beescloud.com</id>
+            <url>https://nexus3.beescloud.com/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+</project>
