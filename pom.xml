@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.vignesh.jenkins.plugins</groupId>
     <artifactId>my-jenkins-plugin</artifactId>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <properties>
         <project.scm.id>github</project.scm.id>
@@ -28,7 +28,7 @@
         <connection>scm:git:https://github.com/vbhask/my-jenkins-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/vbhask/my-jenkins-plugin.git</developerConnection>
         <url>https://github.com/vbhask/my-jenkins-plugin</url>
-      <tag>my-jenkins-plugin-1.1</tag>
+      <tag>HEAD</tag>
   </scm>
     <repositories>
         <repository>
